@@ -8,6 +8,8 @@
 #' @importFrom hms as.hms
 #' @importFrom reshape2 melt
 #' @importFrom ggplot2 ggplot
+#' @importFrom ggplot2 aes
+#' @importFrom ggplot2 element_text
 #' @importFrom ggplot2 geom_line
 #' @importFrom ggplot2 theme
 #' @importFrom ggplot2 theme_bw
@@ -43,7 +45,7 @@ FPCA_plot = function(fpca, npc = 2, obj = c("FPC", "EST"))
       scale_color_manual(labels = c(paste("1st FPC: ", prop[1], "%", sep = ""), paste("2nd FPC: ", prop[2], "%", sep = "")),
                          values = c("red", "blue"), guide = guide_legend(title = NULL)) +
       scale_x_continuous(breaks = seq(hms(0, 0, 0), hms(00, 00, 24), length = 25), labels = paste0(seq(00, 24, length = 25), ":00")) +
-      theme(legend.text=element_text(size = 10), axis.text = element_text(size = 13), legend.position = c(0.1, 0.1), # legend.position = c(0.85, 0.9)
+      theme(legend.text = element_text(size = 10), axis.text = element_text(size = 13), legend.position = c(0.1, 0.1), # legend.position = c(0.85, 0.9)
             axis.title = element_text(size = 15), plot.title = element_text(hjust = 0.5, size = 16))
   }
 
@@ -64,7 +66,7 @@ FPCA_plot = function(fpca, npc = 2, obj = c("FPC", "EST"))
       scale_linetype_manual(values = c(fitted = 1, ptwise.UB = 2, ptwise.LB = 2)) +  # simul.UB = 3, simul.LB = 3)) +
       scale_color_manual(values = c(fitted = 1, ptwise.UB = 2, ptwise.LB = 2)) + # simul.UB = 3, simul.LB = 3))
       scale_x_continuous(breaks = seq(hms(0, 0, 0), hms(00, 00, 24), length = 25), labels = paste0(seq(00, 24, length = 25), ":00")) +
-      theme(legend.text=element_text(size = 10), axis.text = element_text(size = 13), legend.position = "NONE", # legend.position = c(0.05, 0.9)
+      theme(legend.text = element_text(size = 10), axis.text = element_text(size = 13), legend.position = "NONE", # legend.position = c(0.05, 0.9)
             axis.title = element_text(size = 15), plot.title = element_text(hjust = 0.5, size = 16))
   }
 
