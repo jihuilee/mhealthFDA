@@ -45,7 +45,7 @@ FPCA_plot = function(fpca, npc = 2, obj = c("FPC", "EST"))
       scale_color_manual(labels = c(paste("1st FPC: ", prop[1], "%", sep = ""), paste("2nd FPC: ", prop[2], "%", sep = "")),
                          values = c("red", "blue"), guide = guide_legend(title = NULL)) +
       scale_x_continuous(breaks = seq(hms(0, 0, 0), hms(00, 00, 24), length = 25), labels = paste0(seq(00, 24, length = 25), ":00")) +
-      theme(legend.text = element_text(size = 10), axis.text = element_text(size = 13), legend.position = c(0.1, 0.1), # legend.position = c(0.85, 0.9)
+      theme(legend.text = element_text(size = 10), axis.text = element_text(size = 13), legend.position = c(0.1, 0.9), # legend.position = c(0.85, 0.9) / c(0.85, 0.9)
             axis.title = element_text(size = 15), plot.title = element_text(hjust = 0.5, size = 16))
   }
 
