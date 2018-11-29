@@ -1,6 +1,6 @@
 #' Stretch derived (daily summary) measurements for multiple subjects (evaluate curves on a common grid)
 #'
-#' @param data Long data frame of daily measure. Output of function 'daily'. Data include columns named Subj, Date, DayofWeek, and Measure.
+#' @param data Long data frame of daily measure. Output of function 'daily'. Data include columns named Subj, Date, and Measure.
 #' @param ngrid Number of grid. Default is 200.
 #'
 #' @export

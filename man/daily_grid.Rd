@@ -7,7 +7,7 @@
 daily_grid(data, ngrid = 200)
 }
 \arguments{
-\item{data}{Long data frame of daily measure. Output of function 'daily'. Data include columns named Subj, Date, DayofWeek, and Measure.}
+\item{data}{Long data frame of daily measure. Output of function 'daily'. Data include columns named Subj, Date, and Measure.}
 
 \item{ngrid}{Number of grid. Default is 200.}
 }
