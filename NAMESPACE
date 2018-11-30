@@ -3,6 +3,7 @@
 export(FPCA)
 export(FPCA_plot)
 export(FPCA_plot_day)
+export(FPCA_plot_time)
 export(daily)
 export(daily_grid)
 export(data_grid)
