@@ -24,7 +24,7 @@ FPCA_plot = function(fpca, npc = 2, obj = c("FPC", "EST"))
   if (fpca$npc == 1){npc = 1} else {npc = npc}
 
   # tseq
-  tseq = tseq(0, 1, length = nrow(fpca$efunctions))
+  tseq = seq(0, 1, length = nrow(fpca$efunctions))
 
   plot.dat = data.frame(Time = as.hms(rep(tseq, npc)),
                         FPC = c(fpca$efunctions[,1:npc]),
