@@ -1,6 +1,6 @@
-# `DigiPheno'
+# `mhealthFDA'
 
-## Digital Phenotyping using smartphone data
+## Functional Data analysis for Smartphone Data
 
-### Install the package 'DigiPheno'
-To install the package from Github, please use `devtools::install_github('jihuilee/DigiPheno')`.
+### Install the package 'mheatlhFDA'
+To install the package from Github, please use `devtools::install_github('jihuilee/mhealthFDA')`.
